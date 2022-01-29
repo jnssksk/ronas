@@ -1,0 +1,116 @@
+﻿<Page x:Name="TemplatePage" x:Class="ronas.projektVorlagePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ronas"
+      mc:Ignorable="d" 
+      Height="700" Width="1200"
+      Title="projektVorlagePage" Background="#FF212121">
+
+    <Grid x:Name="TemplateGrid">
+        <StackPanel x:Name="detailsHeaderPanel" HorizontalAlignment="Left" Height="77" Margin="50,32,0,0" VerticalAlignment="Top" Width="953" Orientation="Horizontal">
+            <TextBlock x:Name="detailsHeader" Text="ronas." Foreground="#FF5AB6AD" FontWeight="Bold" FontSize="48"/>
+            <TextBlock Foreground="White" FontWeight="Bold" FontSize="22" Width="253"><Run/><LineBreak/><Run Text="  "/><Run Text="Projektvorlage"/></TextBlock>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="403" Margin="39,145,0,0" VerticalAlignment="Top" Width="348">
+            <StackPanel Margin="0,0,0,0">
+                <TextBlock x:Name="Status" TextWrapping="Wrap" Text="Status" Foreground="White" FontWeight="Bold" FontSize="16"/>
+                <TextBox x:Name="detailsState" VerticalContentAlignment="Center" Background="{x:Null}" Height="35" Foreground="White" CaretBrush="White" FontWeight="Bold" FontSize="16">
+                </TextBox>
+            </StackPanel>
+            <TextBlock x:Name="Auftraggeber" TextWrapping="Wrap" Text="Auftraggeber" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsChef" CaretBrush="White" Height="35" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="Architekt" TextWrapping="Wrap" Text="Architekt" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsArchitect" CaretBrush="White" Height="35" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="Fachplaner" TextWrapping="Wrap" Text="weitere Fachplaner" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsFachplaner" CaretBrush="White" Height="35" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="Beschreibung" TextWrapping="Wrap" Text="Beschreibung" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsDescription" Height="35" CaretBrush="White" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="Bemerkung" TextWrapping="Wrap" Text="Bemerkungen" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsComment" Height="38" CaretBrush="White" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Margin="426,145,0,0" VerticalAlignment="Top" Width="348" Height="193">
+            <TextBlock x:Name="Gewerke" TextWrapping="Wrap" Foreground="White" FontWeight="Bold" FontSize="16"><Run Text="beauftragte Gewer"/><Run Text="k"/><Run Text="e"/></TextBlock>
+            <TextBox x:Name="detailsGewerke" Height="35" CaretBrush="White" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="SchlussrechnungName" TextWrapping="Wrap" Text="Schlussrechnung Dateiname" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsBillFilename" Height="35" TextWrapping="Wrap" CaretBrush="White" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="SchlussrechnungDatum" TextWrapping="Wrap" Text="Schlussrechnung Datum" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsBillDate" Height="35" TextWrapping="Wrap" CaretBrush="White" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="194" Margin="426,338,0,0" VerticalAlignment="Top" Width="170">
+            <TextBlock x:Name="Kuerzel" TextWrapping="Wrap" Text="Kürzel" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,5,0,0"/>
+            <TextBox x:Name="detailsAbbrev" Height="35" CaretBrush="White" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="Zahlungseingang" TextWrapping="Wrap" Text="Zahlungseingang" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsPaidDate" Height="35" CaretBrush="White" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="194" Margin="604,338,0,0" VerticalAlignment="Top" Width="170">
+            <TextBlock x:Name="Projektnummer" TextWrapping="Wrap" Text="Projektnummer" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,5,0,0"/>
+            <TextBox x:Name="detailsNumber" Height="35" TextWrapping="Wrap" CaretBrush="White" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="ZahlungseingangSumme" TextWrapping="Wrap" Text="Zahlungseingang Net." Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsPaidSum" Height="35" TextWrapping="Wrap" CaretBrush="White" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Margin="813,145,0,0" VerticalAlignment="Top" Width="170">
+            <TextBlock x:Name="Honorarangebot" TextWrapping="Wrap" Text="Honorarangebot" Foreground="White" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="detailsGewDauer" Height="35" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" CaretBrush="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="LP9" TextWrapping="Wrap" Text="LP-9" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsLP9Date" Height="35" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" CaretBrush="White" FontSize="16" VerticalContentAlignment="Center"/>
+            <StackPanel Margin="0,10,0,0">
+                <TextBlock x:Name="Kleinprojekt" TextWrapping="Wrap" Text="Kleinprojekt" Foreground="White" FontWeight="Bold" FontSize="16"/>
+                <TextBox x:Name="detailsKleinprojekt" VerticalContentAlignment="Center" Background="{x:Null}" Height="35" Foreground="White" FontWeight="Bold" FontSize="16" CaretBrush="White" >
+                </TextBox>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0">
+                <TextBlock x:Name="Leistungsphasen" TextWrapping="Wrap" Text="Leistungsphasen" Foreground="White" FontWeight="Bold" FontSize="16"/>
+                <TextBox x:Name="detailsLP" VerticalContentAlignment="Center" Background="{x:Null}" Height="35" Foreground="White" FontWeight="Bold" FontSize="16" CaretBrush="White" >
+                </TextBox>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0">
+                <TextBlock x:Name="Homepage" TextWrapping="Wrap" Text="Auf Homepage" Foreground="White" FontWeight="Bold" FontSize="16"/>
+                <TextBox x:Name="detailsHomepage" VerticalContentAlignment="Center" Background="{x:Null}" Height="35" Foreground="White" FontWeight="Bold" FontSize="16" CaretBrush="White" >
+                </TextBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Margin="988,145,0,0" VerticalAlignment="Top" Width="170">
+            <TextBlock x:Name="Ingenieurvertrag" TextWrapping="Wrap" Text="Ingenieurvertrag" Foreground="White" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="detailsEngineerContract" Height="35" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" CaretBrush="White" VerticalContentAlignment="Center"/>
+            <TextBlock x:Name="LP9_Zahlung" TextWrapping="Wrap" Text="LP-9 Zahlungseingang" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+            <TextBox x:Name="detailsLP9Sum" Height="35" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center" CaretBrush="White" />
+            <StackPanel Margin="0,10,0,0">
+                <TextBlock x:Name="Splitvertrag" TextWrapping="Wrap" Text="Splitvertrag" Foreground="White" FontWeight="Bold" FontSize="16"/>
+                <TextBox x:Name="detailsSplitContract" VerticalContentAlignment="Center" Background="{x:Null}" Height="35" Foreground="White" FontWeight="Bold" FontSize="16" CaretBrush="White" >
+                </TextBox>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0">
+                <TextBlock x:Name="LP9_Möglich" TextWrapping="Wrap" Text="LP-9 möglich" Foreground="White" FontWeight="Bold" FontSize="16"/>
+                <TextBox x:Name="detailsLP9Possible" VerticalContentAlignment="Center" Background="{x:Null}" Height="35" Foreground="White" FontWeight="Bold" FontSize="16" CaretBrush="White" >
+                </TextBox>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0">
+                <TextBlock x:Name="Referenzen" TextWrapping="Wrap" Text="In Referenzen" Foreground="White" FontWeight="Bold" FontSize="16"/>
+                <TextBox x:Name="detailsReferenzen" VerticalContentAlignment="Center" Background="{x:Null}" Height="35" Foreground="White" FontWeight="Bold" FontSize="16" CaretBrush="White" >
+                </TextBox>
+            </StackPanel>
+        </StackPanel>
+        <Grid x:Name="TutGrid" Visibility="Hidden">
+            <Rectangle x:Name="TutorialBgRect" HorizontalAlignment="Left" Height="700" Stroke="Black" VerticalAlignment="Top" Width="1200">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black" Opacity="0.9"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label x:Name="TutLabel1" Content="Hier können Sie die Namen der einzelnen &#xD;&#xA;Informationsfelder in der Projektvorlage bearbeiten." HorizontalAlignment="Left" Margin="39,82,0,0" VerticalAlignment="Top" Width="597" Height="100" FontWeight="Bold" FontSize="24" Foreground="White"/>
+            <Label x:Name="TutLabel2" Content="Geben sie dazu die gewünschten Namen in die&#xD;&#xA;jeweilige Textfelder ein und &#xD;&#xA;drücken sie anschließend auf &quot;Speichern&quot;." HorizontalAlignment="Left" Margin="687,233,0,0" VerticalAlignment="Top" Width="471" Height="105" FontWeight="Bold" FontSize="21" Foreground="White"/>
+            <Label x:Name="TutLabel3" Content="Anschließend werden Sie in den Projektdetails&#xD;&#xA;der einzelnen Projekte sehen, dass die Namen&#xD;&#xA;der Felder angepasst wurden." HorizontalAlignment="Left" Margin="39,375,0,0" VerticalAlignment="Top" Width="471" Height="105" FontWeight="Bold" FontSize="19" Foreground="White"/>
+            <Rectangle x:Name="TutorialClickRect" HorizontalAlignment="Left" Height="700" Stroke="Black" VerticalAlignment="Top" Width="1200" MouseDown="TutRectClick">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </Rectangle.Fill>
+            </Rectangle>
+
+        </Grid>
+        <Image x:Name="backBtn" HorizontalAlignment="Left" Height="30" Margin="55,625,0,0" VerticalAlignment="Top" Width="30" Source="backBtn.png"  Cursor="Hand" MouseDown="BackClick"/>
+        <Image x:Name="SaveBtn_Copy" HorizontalAlignment="Left" Height="30" Margin="1109,625,0,0" VerticalAlignment="Top" Width="30" Source="SaveBtn.png" Cursor="Hand" MouseDown="SaveClick" Stretch="UniformToFill"/>
+        <Image x:Name="standardBtn" HorizontalAlignment="Left" Height="30" Margin="582,625,0,0" VerticalAlignment="Top" Width="30" Source="standardBtn.png" Cursor="Hand" MouseDown="standardClick" ToolTip="Auf Standardwerte zurücksetzen"/>
+
+    </Grid>
+</Page>
